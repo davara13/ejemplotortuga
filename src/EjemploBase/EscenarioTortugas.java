@@ -15,21 +15,17 @@ import java.awt.Color;
  */
 public class EscenarioTortugas extends TurtleFrame{
     Turtle tortuga1 = null;
-    Turtle tortuga2 = null;
     
     public EscenarioTortugas() {
       tortuga1 = new Turtle(this);
       tortuga1.setColor(Color.RED);
-      tortuga1.setPos(60,0);
-      
-      tortuga2 = new Turtle(this);
-      tortuga1.setPos(-60,0);
+      tortuga1.setPos(20,0);
     }
     
     public void iniciar(){
       // HiloBase hilo = new HiloBase(tortuga1);
       // hilo.start();
-       TrianguloEquilateroAbajo hilo2 = new TrianguloEquilateroAbajo(tortuga2);
+       Exterior hilo2 = new Exterior(tortuga1);
        hilo2.start();
     }
     

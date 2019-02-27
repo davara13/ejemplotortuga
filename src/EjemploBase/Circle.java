@@ -11,22 +11,21 @@ import ch.aplu.turtle.Turtle;
  *
  * @author daaariaspa
  */
-public class TrianguloEquilateroAbajo extends Thread {
-
+public class Circle extends Thread{
     private Turtle tortuga;
-
-    public TrianguloEquilateroAbajo(Turtle tortuga) {
+    
+    public Circle(Turtle tortuga) {
         this.tortuga = tortuga;
     }
 
     @Override
     public void run() {
-       
-            this.tortuga.left(30);
-            this.tortuga.forward(50);
-            this.tortuga.right(120);
-            this.tortuga.forward(50);
-            this.tortuga.right(120);
-            this.tortuga.forward(50);
+        this.tortuga.right(45);
+           this.tortuga.forward(56.56);
+        for (int i = 0; i < 3; i++) {
+            this.tortuga.right(90);
+            this.tortuga.forward(56.56);
+        }
+
     }
 }
